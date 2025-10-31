@@ -31,9 +31,10 @@ public class CommandsTest {
 
         WebElement A = driver.findElement(By.id("column-a"));
         WebElement B = driver.findElement(By.id("column-b"));
-        if(A.getLocation().getY()!=B.getLocation().getY())
+        if(A.getLocation().getY()==B.getLocation().getY())
         System.out.println("Columns A and B are succesfully aligned");
 
         driver.quit();
     }
 }
+
